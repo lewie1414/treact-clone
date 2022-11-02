@@ -1213,6 +1213,10 @@ footer .logo {
         width: 100%;
     }
 
+    .price__container:nth-child(2) {
+        margin: 0 auto;
+    }
+
     .price__button {
         width: 100%;
     }
@@ -1280,9 +1284,16 @@ footer .logo {
     }
 
     footer .link {
-        margin: 0 16px;
         text-align: center;
         width: auto;
+    }
+
+    footer .link:nth-child(-n+3) {
+        width: calc(100% / 3);
+    }
+
+    footer .link:nth-child(n+4) {
+        width: calc(100% / 2);
     }
 
     .line__break {
@@ -1291,9 +1302,15 @@ footer .logo {
 
     .footer__info {
         flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 
     .copyright {
         margin: 12px 0 20px 0;
+    }
+
+    .social__links {
+        align-items: center;
     }
 }
